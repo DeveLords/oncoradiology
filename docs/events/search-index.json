@@ -3,21 +3,21 @@
     {
       "type": "Стандарты",
       "date": "2024",
-      "tags": ["oncology"],
+      "tags": ["kt-mrt"],
       "name": "МРТ в диагностике рака яичников",
       "reference": "https://oncoradiology.ru/materials/ct-mri#rec1789648511"
     },
     {
       "type": "Классификация",
       "date": "2024",
-      "tags": ["radiology"],
+      "tags": ["pet-kt", "kt-mrt"],
       "name": "КЛАССИФИКАЦИЯ LI-RADS",
       "reference": "https://oncoradiology.ru/materials/ct-mri#rec1797234231"
     },
     {
       "type": "Классификация",
       "date": "2024",
-      "tags": ["lecture"],
+      "tags": ["usi"],
       "name": "КЛАССИФИКАЦИЯ O-RADS ПО ДАННЫМ МРТ",
       "reference": "https://oncoradiology.ru/materials/ct-mri#rec1799212071"
     }
