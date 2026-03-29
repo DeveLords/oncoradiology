@@ -1,0 +1,115 @@
+.uc-card {
+      transition: all 0.3s ease;
+    }
+
+    .uc-card div {
+        cursor: default;
+    }
+
+    .uc-card:hover{
+      transform: translateY(-0.5px);
+      box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+    }
+
+    .uc-card-journal {
+      transition: all 0.3s ease;
+    }
+
+    .uc-card-journal div {
+        cursor: pointer;
+    }
+
+    .uc-card-journal:hover{
+
+      box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+    }
+
+    .uc-dropdown-submenu {
+        position: absolute !important;
+        top: 60px !important;
+        visibility: hidden;
+        pointer-events: none;
+        opacity: 0;
+        height: 0;
+        transform: translateY(-10px);
+        border: 1px solid #E5E5E5;
+        border-radius: 20px;
+        background-color: rgba(255, 255, 255, 1);
+        transition: all 0.3s ease;
+    }
+
+    .uc-dropdown-menu:hover + .uc-dropdown-submenu,
+    .uc-dropdown-submenu:hover {
+        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+        opacity: 1;
+        pointer-events: auto;
+        visibility: visible;
+        transform: translateY(0);
+        height: 100%;
+    }
+
+    .uc-header .t396__artboard {
+        border-bottom: 1px solid #E5E5E5;
+        background-color: rgba(255, 255, 255, 0.7);
+        backdrop-filter: blur(10px);
+    }
+
+    .uc-menu-element {
+        cursor: default;
+    }
+
+    .uc-menu-element div {
+        cursor: default;
+    }
+
+    .uc-zero-block {
+        padding-top: 64px !important;
+        padding-bottom: 64px !important;
+    }
+
+    .uc-zero-block:after {
+        content: ' ';
+        text-decoration: none;
+        position: absolute;
+        width: 1200px;
+        height: 100%;
+        left: 0;
+        margin-left: 25%;
+        border-bottom: solid 1px #E5E5E5;
+    }
+
+    .uc-separator {
+        padding-top: 64px !important;
+        padding-bottom: 64px !important;
+    }
+
+    .uc-footer {
+        border-top: 1px solid #E5E5E5;
+        padding-top: 20px;
+    }
+
+    .uc-block-banner {
+        padding-top: 144px !important;
+    }
+
+    .uc-block-last {
+        padding-bottom: 64px !important;
+    }
+
+    /* .uc-zero-block .t396__artboard {
+        height: auto !important;
+    } */
+
+    /* .uc-block-banner {
+        padding-top: 144px;
+        padding-bottom: 64px;
+        border-bottom: 1px solid #E5E5E5;
+    } */
+
+
+
+    /* .uc-base-block {
+        padding-top: 64px;
+        padding-bottom: 64px;
+        border-bottom: 1px solid #E5E5E5;
+    } */
