@@ -80,13 +80,18 @@
                 font-weight: 600;
             }
 
-            h3.congress-header {
+            h3.cust-card-header {
                 margin: 0;
                 font-size: 16px;
                 font-weight: 600;
             }
 
-            .colored {
+            .card-underline {
+                border-bottom: 1px solid #e5e5e5;
+                padding-bottom: 16px;
+            }
+
+            .colored-puple {
                 color: #6a2da9;
             }
 
@@ -104,6 +109,12 @@
                 flex-wrap: wrap;
             }
 
+            .flex-container-header {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+            }
+
             .group-btn {
                 margin: 8px 0;
             }
@@ -116,7 +127,23 @@
 
 		</style>
 		<div class="container mt-5">
-			<div class="row row-cols-3 gy-3 gx-3" id="articles-grid">
+			<div class="row row-cols-2 gy-3 gx-3" id="articles-grid">
+                <div class="col">
+                    <div class="card">
+                        <div class="content">
+                            <div class="flex-container-header card-underline">
+                                <h3 class="cust-card-header colored-puple">Форум</h3>
+                                <div class="subtext">19.06.2025</div>
+                            </div>
+                            <div class="article-body">
+                                <div class="article-name">${escapeHtml(article.title)}</div>
+                                <div>
+                                    <a class="article-button" href="${escapeHtml(article.link)}">Открыть</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 			</div>
             <div class="mt-5">
                 <a class="article-button" id="show-more-articles" href="#">Показать еще</a>
@@ -177,81 +204,15 @@
 		</div>
 		<script>
             document.addEventListener("DOMContentLoaded", function () {
-                const articles = [
-                    {
-                        header: "Статья",
-                        title: "МРТ",
-                        link: "/article"
-                    },
-                    {
-                        header: "Статья",
-                        title: "МРТ",
-                        link: "/article"
-                    },
-                    {
-                        header: "Статья",
-                        title: "МРТ",
-                        link: "/article"
-                    },
-                    {
-                        header: "Статья",
-                        title: "МРТ",
-                        link: "/article"
-                    },
-                    {
-                        header: "Статья",
-                        title: "МРТ",
-                        link: "/article"
-                    },
-                    {
-                        header: "Статья",
-                        title: "МРТ",
-                        link: "/article"
-                    },
-                    {
-                        header: "Статья",
-                        title: "МРТ",
-                        link: "/article"
-                    },
-                    {
-                        header: "Статья",
-                        title: "МРТ",
-                        link: "/article"
-                    },
-                    {
-                        header: "Статья",
-                        title: "МРТ",
-                        link: "/article"
-                    },
-                    {
-                        header: "Статья",
-                        title: "МРТ",
-                        link: "/article"
-                    },
-                    {
-                        header: "Статья",
-                        title: "МРТ",
-                        link: "/article"
-                    },
-                    {
-                        header: "Статья",
-                        title: "МРТ",
-                        link: "/article"
-                    },
-                    {
-                        header: "Статья",
-                        title: "МРТ",
-                        link: "/article"
-                    }
-                ];
+                const BASE_URL = "";
 
                 const grid = document.getElementById("articles-grid");
                 const button = document.getElementById("show-more-articles");
 
                 if (!grid || !button) return;
 
-                const initialCount = 6;
-                const step = 3;
+                const initialCount = 2;
+                const step = 2;
                 let renderedCount = 0;
 
                 function escapeHtml(string) {
@@ -268,11 +229,12 @@
                        <div class="col">
                             <div class="card">
                                 <div class="content">
-                                    <div class="article-header">${escapeHtml(article.header)}</div>
+
+                                    <h3 class="cust-card-header colored-puple card-underline">${escapeHtml(article.type)}</h3>
                                     <div class="article-body">
                                         <div class="article-name">${escapeHtml(article.title)}</div>
                                         <div>
-                                            <a class="article-button" href="${escapeHtml(article.link)}">Открыть</a>
+                                            <a class="article-button" href="${escapeHtml(article.reference)}">Открыть</a>
                                         </div>
                                     </div>
                                 </div>
@@ -283,7 +245,6 @@
 
 
                 function renderCards(count) {
-                    console.log("here");
                     const items = articles.slice(renderedCount, renderedCount + count);
 
                     items.forEach((article) => {
