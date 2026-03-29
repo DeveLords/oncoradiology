@@ -1,0 +1,25 @@
+{
+  "items": [
+    {
+      "type": "Лекция",
+      "date": "13.02.2025",
+      "name": "МРТ в диагностике рака яичников",
+      "speaker": "Солопова А.Е.",
+      "reference": "https://disk.yandex.ru/i/KDvJSN0TRqnf2A"
+    },
+    {
+      "type": "Лекция",
+      "date": "15.02.2024",
+      "name": "МР-семиотика метастатического поражения яичников",
+      "speaker": "Филипова Ю.А.",
+      "reference": "https://disk.yandex.ru/i/o_NShT6sIDJj1Q"
+    },
+    {
+      "type": "Лекция",
+      "date": "15.02.2024",
+      "name": "Дифференциальная диагностика образований яичников",
+      "speaker": "Сыченкова И.Ю.",
+      "reference": "https://disk.yandex.ru/i/Bi8aTpEzFgnJtA"
+    }
+  ]
+}
