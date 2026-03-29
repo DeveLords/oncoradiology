@@ -1,0 +1,25 @@
+{
+  "items": [
+    {
+      "type": "Стандарты",
+      "date": "2024",
+      "tags": ["oncology"],
+      "name": "МРТ в диагностике рака яичников",
+      "reference": "https://oncoradiology.ru/materials/ct-mri#rec1789648511"
+    },
+    {
+      "type": "Классификация",
+      "date": "2024",
+      "tags": ["radiology"],
+      "name": "КЛАССИФИКАЦИЯ LI-RADS",
+      "reference": "https://oncoradiology.ru/materials/ct-mri#rec1797234231"
+    },
+    {
+      "type": "Классификация",
+      "date": "2024",
+      "tags": ["lecture"],
+      "name": "КЛАССИФИКАЦИЯ O-RADS ПО ДАННЫМ МРТ",
+      "reference": "https://oncoradiology.ru/materials/ct-mri#rec1799212071"
+    }
+  ]
+}
